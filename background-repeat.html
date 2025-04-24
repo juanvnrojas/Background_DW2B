@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Repeat</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .explicacao {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: white;
+      }
+
+      .exemplo {
+        height: 150px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        background-image: url("img/circulo.png");
+        background-size: 40px;
+      }
+
+      .voltar {
+        display: block;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+      }
+
+      .codigo {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 15px 0;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>background-repeat</h1>
+
+    <div class="explicacao">
+      <h2>O que faz?</h2>
+      <p>Controla como uma imagem de fundo se repete no elemento.</p>
+
+      <h2>Valores principais:</h2>
+      <div class="codigo">
+        <code>
+          background-repeat: repeat; /* Padrão */<br />
+          background-repeat: no-repeat;<br />
+          background-repeat: repeat-x;<br />
+          background-repeat: repeat-y;<br />
+          background-repeat: space;<br />
+          background-repeat: round;
+        </code>
+      </div>
+
+      <h2>Exemplos práticos:</h2>
+
+      <div class="exemplo" style="background-repeat: repeat">
+        repeat (padrão)
+      </div>
+
+      <div class="exemplo" style="background-repeat: no-repeat">no-repeat</div>
+
+      <div class="exemplo" style="background-repeat: repeat-x">
+        repeat-x (horizontal)
+      </div>
+
+      <div class="exemplo" style="background-repeat: repeat-y">
+        repeat-y (vertical)
+      </div>
+
+      <h2>Importante saber:</h2>
+      <ul>
+        <li>Funciona junto com <code>background-image</code></li>
+        <li>O <code>background-size</code> afeta o padrão de repetição</li>
+        <li>Usar <code>no-repeat</code> para imagens únicas</li>
+      </ul>
+    </div>
+
+    <a href="principal.html" class="voltar">Voltar</a>
+  </body>
+</html>

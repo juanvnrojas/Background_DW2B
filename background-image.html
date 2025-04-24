@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .explicacao {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: white;
+      }
+
+      .exemplo {
+        height: 150px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+      }
+
+      .voltar {
+        display: block;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+      }
+
+      .dica-imagem {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>background-image</h1>
+
+    <div class="explicacao">
+      <h2>O que é?</h2>
+      <p>
+        Propriedade CSS para definir imagens ou gradientes como fundo de
+        elementos.
+      </p>
+
+      <h2>Como usar?</h2>
+      <p>
+        Sintaxe básica:<br /><code>background-image: url("imagem.jpg");</code>
+      </p>
+
+      <div
+        class="exemplo"
+        style="background-image: url('img/ceu.png'); background-size: cover"
+      >
+        Exemplo com imagem
+      </div>
+
+      <h2>Gradientes CSS</h2>
+      <p>Podemos criar degradês usando:</p>
+      <div
+        class="exemplo"
+        style="
+          background-image: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+        "
+      >
+        Linear Gradient
+      </div>
+
+      <div
+        class="exemplo"
+        style="background-image: radial-gradient(circle, #4facfe, #00f2fe)"
+      >
+        Radial Gradient
+      </div>
+
+      <h3>Sintaxe de Gradientes:</h3>
+      <pre>
+/* Linear */
+background-image: linear-gradient(direção, cor1, cor2);
+
+/* Radial */
+background-image: radial-gradient(forma tamanho, cor1, cor2);</pre
+      >
+
+      <div class="dica-imagem">
+        <h3>Exemplo Prático:</h3>
+        <div
+          class="exemplo"
+          style="
+            background-image: url('img/gradiante.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #282b36;
+          "
+        ></div>
+      </div>
+
+      <h2>Importante saber:</h2>
+      <ul>
+        <li>Gradientes não precisam de arquivos externos</li>
+        <li>Usar <code>background-position</code> para ajustar foco</li>
+      </ul>
+    </div>
+
+    <a href="principal.html" class="voltar">Voltar</a>
+  </body>
+</html>

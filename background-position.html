@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Position</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .explicacao {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: white;
+      }
+
+      .exemplo {
+        height: 150px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        background-image: url("img/estrela.png");
+        background-repeat: no-repeat;
+        background-size: 50px;
+      }
+
+      .voltar {
+        display: block;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+      }
+
+      .codigo {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>background-position</h1>
+
+    <div class="explicacao">
+      <h2>O que faz?</h2>
+      <p>Define a posição inicial de uma imagem de fundo no elemento.</p>
+
+      <h2>Sintaxe básica:</h2>
+      <div class="codigo">
+        <code>background-position: horizontal vertical;</code>
+      </div>
+
+      <h2>Exemplos com valores-chave:</h2>
+
+      <div class="exemplo" style="background-position: center center">
+        center center
+      </div>
+
+      <div class="exemplo" style="background-position: left top">left top</div>
+
+      <div class="exemplo" style="background-position: right bottom">
+        right bottom
+      </div>
+
+      <h2>Exemplos com medidas:</h2>
+      <div class="exemplo" style="background-position: 20px 10px">
+        20px 10px
+      </div>
+
+      <div class="exemplo" style="background-position: 80% 30%">80% 30%</div>
+
+      <h2>Importante saber:</h2>
+      <ul>
+        <li>Primeiro valor: horizontal (left/center/right ou medida)</li>
+        <li>Segundo valor: vertical (top/center/bottom ou medida)</li>
+        <li>Valores padrão: 0% 0% (canto superior esquerdo)</li>
+        <li>Funciona junto com <code>background-size</code></li>
+        <li>Valores negativos são permitidos</li>
+      </ul>
+    </div>
+
+    <a href="principal.html" class="voltar">Voltar</a>
+  </body>
+</html>

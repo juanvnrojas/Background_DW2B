@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Size</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .explicacao {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: white;
+      }
+
+      .exemplo {
+        height: 150px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+      }
+
+      .prossiga {
+        display: block;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Novo estilo para a sintaxe */
+      .sintaxe {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>background-size</h1>
+
+    <div class="explicacao">
+      <h2>O que faz?</h2>
+      <p>Controla o tamanho da imagem de fundo no elemento.</p>
+
+      <!-- Sintaxe básica adicionada -->
+      <div class="sintaxe">
+        <h2>Sintaxe Básica:</h2>
+        <pre><code>background-size: valor;
+        
+Valores possíveis:
+background-size: cover; - Cobrir todo o container
+background-size: contain; - Mostrar imagem inteir
+background-size: 100px 50px; - Largura e altura fixas
+background-size: 50%; - Tamanho relativo
+background-size: auto; - Tamanho original</code></pre>
+      </div>
+
+      <h2>Exemplos práticos:</h2>
+
+      <div
+        class="exemplo"
+        style="background-image: url('img/jockey.png'); background-size: cover"
+      >
+        cover (cobre todo o espaço)
+      </div>
+
+      <div
+        class="exemplo"
+        style="
+          background-image: url(img/jockey.png);
+          background-size: contain;
+          background-color: black;
+        "
+        ;
+      >
+        contain (encaixa a imagem inteira)
+      </div>
+
+      <div
+        class="exemplo"
+        style="
+          background-image: url('img/jockey.png');
+          background-size: 40px;
+          background-repeat: repeat;
+        "
+      >
+        medida (repetição e 40px)
+      </div>
+
+      <h2>Valores principais:</h2>
+      <ul>
+        <li><code>cover</code> - Preenche todo o elemento</li>
+        <li><code>contain</code> - Mostra imagem inteira</li>
+        <li><code>medidas</code> - Ex: 100px, 50%</li>
+      </ul>
+
+      <a href="perfil.html" class="prossiga">Prossiga</a>
+    </div>
+  </body>
+</html>
